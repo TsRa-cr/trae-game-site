@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Tease Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1 class="game-title">Cat Tease Playground</h1>
+            <p class="game-subtitle">逗猫小游戏</p>
+            <button id="startButton" class="btn">开始游戏</button>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+            <div class="game-stats">
+                <p>分数: <span id="score">0</span></p>
+                <p>时间: <span id="time">60</span>s</p>
+                <p>连击: <span id="combo">0</span></p>
+            </div>
+            <div id="gameStatus" class="game-status-message"></div>
+        </div>
+
+        <div class="game-over-screen" style="display: none;">
+            <p class="final-score">最终分数: <span id="finalScore">0</span></p>
+            <p class="max-combo">最高连击: <span id="maxCombo">0</span></p>
+            <button id="restartButton" class="btn">重新开始</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
